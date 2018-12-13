@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+        <div id="app">
+            <!-- String interpolation -->
+            {{ message }}
+            <br/>
+
+            <img v-bind:src=cat_image>
+            <br/>
+            <!-- You can reference your Vue component like a HTML tag here.-->
+            <tickle-counter></tickle-counter>
+
+            <br/><br/><br/><br/>
+
+
+            <img v-bind:src=dog_image>
+            <br/>
+            <!-- You can reference your Vue component like a HTML tag here.-->
+            <tickle-counter></tickle-counter>
+
+        </div>
+        
+        <script src="index.js"></script>
+    </body>
+</html>
